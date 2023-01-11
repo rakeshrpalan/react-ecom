@@ -5,7 +5,7 @@ function Login() {
     <div className="container d-grid gap-2 col-6 mx-auto my-5">
       <form className="login-form mx-5">
         <div className="mb-3 ">
-          <label for="exampleInputEmail1" className="form-label">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
@@ -21,7 +21,7 @@ function Login() {
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
+          <label htmlFor="exampleInputPassword1" className="form-label">
             Password
           </label>
           <input
@@ -38,7 +38,7 @@ function Login() {
             id="exampleCheck1"
             checked
           />
-          <label className="form-check-label" for="exampleCheck1">
+          <label className="form-check-label" htmlFor="exampleCheck1">
             Remember me
           </label>
         </div>

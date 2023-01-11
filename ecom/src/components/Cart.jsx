@@ -29,7 +29,7 @@ const Cart = () => {
     return (
       <>
         <div className="px-4 my-5 bg-light rounded-3 py-5">
-          <div className="container py-4">
+          <div className="container py-4" key={product.id}>
             <div className="row justify-content-center">
               <div className="col-md-4">
                 <img
@@ -70,7 +70,8 @@ const Cart = () => {
         <div className="container">
           <div className="row">
             <NavLink
-              to="/checkout"
+              // to="/checkout"
+              to="/signup"
               className="btn btn-outline-dark mb-5 w-25 mx-auto"
             >
               Proceed to Checkout

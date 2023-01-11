@@ -48,10 +48,13 @@ const Products = () => {
     const updatedList = data.filter((x) => x.category === cat);
     setFilter(updatedList);
   };
-  const ShowProducts = () => {
+  const ShowProducts = (data) => {
     return (
       <>
-        <div className="button d-flex justify-content-center mb-5 pb-5">
+        <div
+          className="button d-flex justify-content-center mb-5 pb-5"
+          key={data.category}
+        >
           <buttton
             className="btn btn-outline-dark me-2 "
             onClick={() => setFilter(data)}
@@ -86,8 +89,8 @@ const Products = () => {
         {filter.map((product) => {
           return (
             <>
-              <div className="col-md-3 mb-4">
-                <div className="card h-100 text-center p-4" key={product.id}>
+              <div className="col-md-3 mb-4" key={product.id}>
+                <div className="card h-100 text-center p-4">
                   <img
                     src={product.image}
                     className="card-img-top"
